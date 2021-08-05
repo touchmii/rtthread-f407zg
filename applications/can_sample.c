@@ -138,7 +138,10 @@ int can_send(int argc, char *argv[])
 		struct rt_can_msg msg = {0};
 		rt_size_t  size;
 		
-		msg.id = 0x100;              /* ID ? 0x78 */
+		can_dev = rt_device_find(CAN_DEV_NAME);
+		
+//		msg.hdr = 0;
+		msg.id = 0x180;              /* ID ? 0x78 */
 		msg.ide = RT_CAN_STDID;     /* ???? */
 		msg.rtr = RT_CAN_DTR;       /* ??? */
 		msg.len = 8;                /* ????? 8 */
