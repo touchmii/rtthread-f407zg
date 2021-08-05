@@ -26,6 +26,8 @@
 .\build\keil\obj\drv_common.o: rt-thread\components\drivers\include\rtdevice.h
 .\build\keil\obj\drv_common.o: rt-thread\components\drivers\include\ipc/poll.h
 .\build\keil\obj\drv_common.o: rt-thread\components\drivers\include\ipc/ringblk_buf.h
+.\build\keil\obj\drv_common.o: rt-thread\components\drivers\include\drivers/spi.h
+.\build\keil\obj\drv_common.o: D:\software\KeilMDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\build\keil\obj\drv_common.o: rt-thread\components\drivers\include\drivers/serial.h
 .\build\keil\obj\drv_common.o: rt-thread\components\drivers\include\drivers/pin.h
 .\build\keil\obj\drv_common.o: rt-thread\components\drivers\include\drivers/can.h
@@ -70,5 +72,4 @@
 .\build\keil\obj\drv_common.o: rt-thread\components\finsh\finsh.h
 .\build\keil\obj\drv_common.o: D:\software\KeilMDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\build\keil\obj\drv_common.o: D:\software\KeilMDK5\ARM\ARMCC\Bin\..\include\ctype.h
-.\build\keil\obj\drv_common.o: D:\software\KeilMDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\build\keil\obj\drv_common.o: D:\software\KeilMDK5\ARM\ARMCC\Bin\..\include\string.h

@@ -16,6 +16,9 @@
 #define RT_USING_IDLE_HOOK
 #define RT_IDLE_HOOK_LIST_SIZE 4
 #define IDLE_THREAD_STACK_SIZE 256
+#define RT_USING_TIMER_SOFT
+#define RT_TIMER_THREAD_PRIO 4
+#define RT_TIMER_THREAD_STACK_SIZE 512
 
 /* kservice optimization */
 
@@ -66,7 +69,7 @@
 #define FINSH_HISTORY_LINES 5
 #define FINSH_USING_SYMTAB
 #define FINSH_USING_DESCRIPTION
-#define FINSH_THREAD_PRIORITY 20
+#define FINSH_THREAD_PRIORITY 10
 #define FINSH_THREAD_STACK_SIZE 4096
 #define FINSH_CMD_SIZE 80
 #define FINSH_USING_MSH
@@ -81,6 +84,9 @@
 
 #define RT_USING_DEVICE_IPC
 #define RT_PIPE_BUFSZ 512
+#define RT_USING_SYSTEM_WORKQUEUE
+#define RT_SYSTEM_WORKQUEUE_STACKSIZE 2048
+#define RT_SYSTEM_WORKQUEUE_PRIORITY 23
 #define RT_USING_SERIAL
 #define RT_USING_SERIAL_V1
 #define RT_SERIAL_USING_DMA
@@ -89,22 +95,33 @@
 #define RT_CAN_USING_HDR
 #define RT_USING_HWTIMER
 #define RT_USING_PIN
+#define RT_USING_SPI
 
 /* Using USB */
 
 
 /* POSIX layer and C standard library */
 
-#define RT_LIBC_USING_TIME
+#define RT_USING_LIBC
 #define RT_LIBC_DEFAULT_TIMEZONE 8
 
 /* Network */
 
 /* Socket abstraction layer */
 
+#define RT_USING_SAL
+#define SAL_INTERNET_CHECK
+#define SAL_SOCKETS_NUM 16
 
 /* Network interface device */
 
+#define RT_USING_NETDEV
+#define NETDEV_USING_IFCONFIG
+#define NETDEV_USING_PING
+#define NETDEV_USING_NETSTAT
+#define NETDEV_USING_AUTO_DEFAULT
+#define NETDEV_IPV4 1
+#define NETDEV_IPV6 0
 
 /* light weight TCP/IP stack */
 
@@ -130,6 +147,22 @@
 
 /* Wiced WiFi */
 
+#define PKG_USING_WIZNET
+#define WIZ_USING_W5500
+
+/* WIZnet device configure */
+
+#define WIZ_SPI_DEVICE "spi20"
+#define WIZ_RST_PIN 3
+#define WIZ_IRQ_PIN 28
+
+/* WIZnet network configure */
+
+#define WIZ_IPADDR "192.168.1.10"
+#define WIZ_GWADDR "192.168.1.1"
+#define WIZ_MSKADDR "255.255.255.0"
+#define WIZ_USING_PING
+#define PKG_USING_WIZNET_LATEST_VERSION
 
 /* IoT Cloud */
 
@@ -196,6 +229,10 @@
 #define BSP_USING_CAN1
 #define BSP_USING_TIM
 #define BSP_USING_TIM11
+#define BSP_USING_SPI
+#define BSP_USING_SPI2
+#define BSP_SPI2_TX_USING_DMA
+#define BSP_SPI2_RX_USING_DMA
 
 /* Board extended module Drivers */
 

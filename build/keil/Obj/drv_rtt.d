@@ -24,10 +24,11 @@
 .\build\keil\obj\drv_rtt.o: rt-thread\components\drivers\include\rtdevice.h
 .\build\keil\obj\drv_rtt.o: rt-thread\components\drivers\include\ipc/poll.h
 .\build\keil\obj\drv_rtt.o: rt-thread\components\drivers\include\ipc/ringblk_buf.h
+.\build\keil\obj\drv_rtt.o: rt-thread\components\drivers\include\drivers/spi.h
+.\build\keil\obj\drv_rtt.o: D:\software\KeilMDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\build\keil\obj\drv_rtt.o: rt-thread\components\drivers\include\drivers/serial.h
 .\build\keil\obj\drv_rtt.o: rt-thread\components\drivers\include\drivers/pin.h
 .\build\keil\obj\drv_rtt.o: rt-thread\components\drivers\include\drivers/can.h
 .\build\keil\obj\drv_rtt.o: rt-thread\components\drivers\include\drivers/hwtimer.h
 .\build\keil\obj\drv_rtt.o: packages\SEGGER_RTT-v1.1.0\RTT\SEGGER_RTT.h
 .\build\keil\obj\drv_rtt.o: packages\SEGGER_RTT-v1.1.0\RTT\SEGGER_RTT_Conf.h
-.\build\keil\obj\drv_rtt.o: D:\software\KeilMDK5\ARM\ARMCC\Bin\..\include\stdlib.h

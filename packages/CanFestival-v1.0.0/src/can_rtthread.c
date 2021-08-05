@@ -116,4 +116,36 @@ CAN_PORT canOpen(s_BOARD *board, CO_Data * d)
     return 0;
 }
 
+#include "rtdevice.h"
+int can_send(int argc, char *argv[])
+{
+		struct rt_can_msg msg = {0};
+		rt_size_t  size;
+		
+		rt_device_t can_dev = rt_device_find("can1");
+		
+//		msg.hdr = 0;
+		msg.id = 0x180;              /* ID ? 0x78 */
+		msg.ide = RT_CAN_STDID;     /* ???? */
+		msg.rtr = RT_CAN_DTR;       /* ??? */
+		msg.len = 8;                /* ????? 8 */
+		/* ???? 8 ???? */
+		msg.data[0] = 0x99;
+		msg.data[1] = 0x88;
+		msg.data[2] = 0x77;
+		msg.data[3] = 0x66;
+		msg.data[4] = 0x55;
+		msg.data[5] = 0xAA;
+		msg.data[6] = 0xCC;
+		msg.data[7] = 0xEE;
+		/* ???? CAN ?? */
 
+		size = rt_device_write(can_dev, 0, &msg, sizeof(msg));
+		if (size == 0)
+		{
+				rt_kprintf("can dev write data failed!\n");
+		}
+		
+		return 0;
+}
+MSH_CMD_EXPORT(can_send, can device send test);

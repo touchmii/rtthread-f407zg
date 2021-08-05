@@ -1,5 +1,10 @@
 [
  {
+  "path": "/packages/iot/wiznet", 
+  "ver": "latest", 
+  "name": "WIZNET"
+ }, 
+ {
   "path": "/packages/tools/SEGGER_RTT", 
   "ver": "v1.1.0", 
   "name": "SEGGER_RTT"
