@@ -459,14 +459,14 @@
           <GroupName>CPU</GroupName>
           <Files>
             <File>
-              <FileName>div0.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>rt-thread\libcpu\arm\common\div0.c</FilePath>
-            </File>
-            <File>
               <FileName>showmem.c</FileName>
               <FileType>1</FileType>
               <FilePath>rt-thread\libcpu\arm\common\showmem.c</FilePath>
+            </File>
+            <File>
+              <FileName>div0.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\libcpu\arm\common\div0.c</FilePath>
             </File>
             <File>
               <FileName>backtrace.c</FileName>
@@ -588,11 +588,6 @@
               <FilePath>rt-thread\components\drivers\spi\spi_dev.c</FilePath>
             </File>
             <File>
-              <FileName>waitqueue.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>rt-thread\components\drivers\src\waitqueue.c</FilePath>
-            </File>
-            <File>
               <FileName>workqueue.c</FileName>
               <FileType>1</FileType>
               <FilePath>rt-thread\components\drivers\src\workqueue.c</FilePath>
@@ -603,19 +598,24 @@
               <FilePath>rt-thread\components\drivers\src\ringbuffer.c</FilePath>
             </File>
             <File>
+              <FileName>ringblk_buf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\drivers\src\ringblk_buf.c</FilePath>
+            </File>
+            <File>
               <FileName>completion.c</FileName>
               <FileType>1</FileType>
               <FilePath>rt-thread\components\drivers\src\completion.c</FilePath>
             </File>
             <File>
+              <FileName>waitqueue.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\drivers\src\waitqueue.c</FilePath>
+            </File>
+            <File>
               <FileName>dataqueue.c</FileName>
               <FileType>1</FileType>
               <FilePath>rt-thread\components\drivers\src\dataqueue.c</FilePath>
-            </File>
-            <File>
-              <FileName>ringblk_buf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>rt-thread\components\drivers\src\ringblk_buf.c</FilePath>
             </File>
             <File>
               <FileName>pipe.c</FileName>
@@ -683,14 +683,14 @@
               <FilePath>rt-thread\components\finsh\shell.c</FilePath>
             </File>
             <File>
-              <FileName>cmd.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>rt-thread\components\finsh\cmd.c</FilePath>
-            </File>
-            <File>
               <FileName>msh.c</FileName>
               <FileType>1</FileType>
               <FilePath>rt-thread\components\finsh\msh.c</FilePath>
+            </File>
+            <File>
+              <FileName>cmd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\finsh\cmd.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -698,9 +698,29 @@
           <GroupName>Kernel</GroupName>
           <Files>
             <File>
+              <FileName>irq.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\irq.c</FilePath>
+            </File>
+            <File>
+              <FileName>idle.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\idle.c</FilePath>
+            </File>
+            <File>
+              <FileName>object.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\object.c</FilePath>
+            </File>
+            <File>
               <FileName>mem.c</FileName>
               <FileType>1</FileType>
               <FilePath>rt-thread\src\mem.c</FilePath>
+            </File>
+            <File>
+              <FileName>clock.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\clock.c</FilePath>
             </File>
             <File>
               <FileName>scheduler.c</FileName>
@@ -713,14 +733,9 @@
               <FilePath>rt-thread\src\components.c</FilePath>
             </File>
             <File>
-              <FileName>object.c</FileName>
+              <FileName>device.c</FileName>
               <FileType>1</FileType>
-              <FilePath>rt-thread\src\object.c</FilePath>
-            </File>
-            <File>
-              <FileName>kservice.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>rt-thread\src\kservice.c</FilePath>
+              <FilePath>rt-thread\src\device.c</FilePath>
             </File>
             <File>
               <FileName>thread.c</FileName>
@@ -728,19 +743,9 @@
               <FilePath>rt-thread\src\thread.c</FilePath>
             </File>
             <File>
-              <FileName>mempool.c</FileName>
+              <FileName>ipc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>rt-thread\src\mempool.c</FilePath>
-            </File>
-            <File>
-              <FileName>clock.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>rt-thread\src\clock.c</FilePath>
-            </File>
-            <File>
-              <FileName>irq.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>rt-thread\src\irq.c</FilePath>
+              <FilePath>rt-thread\src\ipc.c</FilePath>
             </File>
             <File>
               <FileName>src_timer.c</FileName>
@@ -748,19 +753,14 @@
               <FilePath>rt-thread\src\timer.c</FilePath>
             </File>
             <File>
-              <FileName>idle.c</FileName>
+              <FileName>kservice.c</FileName>
               <FileType>1</FileType>
-              <FilePath>rt-thread\src\idle.c</FilePath>
+              <FilePath>rt-thread\src\kservice.c</FilePath>
             </File>
             <File>
-              <FileName>device.c</FileName>
+              <FileName>mempool.c</FileName>
               <FileType>1</FileType>
-              <FilePath>rt-thread\src\device.c</FilePath>
-            </File>
-            <File>
-              <FileName>ipc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>rt-thread\src\ipc.c</FilePath>
+              <FilePath>rt-thread\src\mempool.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -768,9 +768,9 @@
           <GroupName>libc</GroupName>
           <Files>
             <File>
-              <FileName>syscalls.c</FileName>
+              <FileName>mem_std.c</FileName>
               <FileType>1</FileType>
-              <FilePath>rt-thread\components\libc\compilers\armlibc\syscalls.c</FilePath>
+              <FilePath>rt-thread\components\libc\compilers\armlibc\mem_std.c</FilePath>
             </File>
             <File>
               <FileName>libc.c</FileName>
@@ -778,9 +778,9 @@
               <FilePath>rt-thread\components\libc\compilers\armlibc\libc.c</FilePath>
             </File>
             <File>
-              <FileName>mem_std.c</FileName>
+              <FileName>syscalls.c</FileName>
               <FileType>1</FileType>
-              <FilePath>rt-thread\components\libc\compilers\armlibc\mem_std.c</FilePath>
+              <FilePath>rt-thread\components\libc\compilers\armlibc\syscalls.c</FilePath>
             </File>
             <File>
               <FileName>stdlib.c</FileName>
@@ -928,14 +928,14 @@
               <FilePath>packages\CanFestival-v1.0.0\examples\master402\motor_control.c</FilePath>
             </File>
             <File>
-              <FileName>canopen_callback.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>packages\CanFestival-v1.0.0\examples\master402\canopen_callback.c</FilePath>
-            </File>
-            <File>
               <FileName>master402_od.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\CanFestival-v1.0.0\examples\master402\master402_od.c</FilePath>
+            </File>
+            <File>
+              <FileName>canopen_callback.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\CanFestival-v1.0.0\examples\master402\canopen_callback.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -943,14 +943,14 @@
           <GroupName>SAL</GroupName>
           <Files>
             <File>
-              <FileName>netdev.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>rt-thread\components\net\netdev\src\netdev.c</FilePath>
-            </File>
-            <File>
               <FileName>netdev_ipaddr.c</FileName>
               <FileType>1</FileType>
               <FilePath>rt-thread\components\net\netdev\src\netdev_ipaddr.c</FilePath>
+            </File>
+            <File>
+              <FileName>netdev.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\netdev\src\netdev.c</FilePath>
             </File>
             <File>
               <FileName>sal_socket.c</FileName>
@@ -1067,6 +1067,16 @@
               <FilePath>packages\wiznet-latest\ioLibrary\Ethernet\wizchip_socket.c</FilePath>
             </File>
             <File>
+              <FileName>w5500.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\wiznet-latest\ioLibrary\Ethernet\W5500\w5500.c</FilePath>
+            </File>
+            <File>
+              <FileName>wizchip_dns.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\wiznet-latest\ioLibrary\Internet\DNS\wizchip_dns.c</FilePath>
+            </File>
+            <File>
               <FileName>wizchip_conf.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\wiznet-latest\ioLibrary\Ethernet\wizchip_conf.c</FilePath>
@@ -1077,11 +1087,6 @@
               <FilePath>packages\wiznet-latest\src\wiz_ping.c</FilePath>
             </File>
             <File>
-              <FileName>wizchip_dns.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>packages\wiznet-latest\ioLibrary\Internet\DNS\wizchip_dns.c</FilePath>
-            </File>
-            <File>
               <FileName>wiz_device.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\wiznet-latest\src\wiz_device.c</FilePath>
@@ -1090,11 +1095,6 @@
               <FileName>wiz_af_inet.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\wiznet-latest\src\wiz_af_inet.c</FilePath>
-            </File>
-            <File>
-              <FileName>w5500.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>packages\wiznet-latest\ioLibrary\Ethernet\W5500\w5500.c</FilePath>
             </File>
             <File>
               <FileName>wiz_socket.c</FileName>
