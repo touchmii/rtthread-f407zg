@@ -10,7 +10,7 @@
 *.idb
 *.ilk
 *.old
-build
+build/
 Debug
 documentation/html
 packages/
